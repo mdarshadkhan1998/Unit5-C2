@@ -9,7 +9,9 @@ export const Input = ({
   return (
     <div className="inputContainer">
       {/* Add Right Logo */}
-      <input className={`input`} />
+      <input size={size} type={type} onChange={onChange} className={`input ${variant}`} 
+      />
+       <img src={rightLogo} style={{ height:"20px", width:"20px"}} alt="eye" onClick={rightLogoOnClick}/>
     </div>
   );
 };
